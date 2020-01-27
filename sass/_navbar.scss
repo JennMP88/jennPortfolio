@@ -1,13 +1,35 @@
+.sticky{
+  position:fixed;
+  top:0;
+  width:100%
+}
+
 .Navbar {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: $c-grey;
   color:#ffffff;
-  // font-style:Rufina;
+  font-family:"Rufina";
   grid-column: full-start / full-end;
+  padding: 0 10px;
   
+  
+   
+  .Main-nav{
+    display:flex;
+    list-style:none;
+    justify-self: end;
+  }
 
-  // .Main-nav{
-  //   list-style:none;
-  //   font-size:0.7em;
-  //   margin:0;
+  a{
+    padding:4px;
+    color:#ffffff;
+    justify-items: end;
+    text-decoration: none;
+  }
+
+  // a:focus{
+  //   text-decoration: underline;
   // }
+
 }

@@ -1,0 +1,37 @@
+.Projects{
+  display:grid;
+  grid-template-columns: repeat(8, minmax(min-content,1fr)); 
+  grid-template-rows:repeat(4,1fr);
+
+  grid-column: full-start/full-end;
+  
+
+
+
+  &__webdev{
+
+    // background-color: $c-red;
+    grid-column: 1/-1;
+    grid-row:1/-1;
+    
+
+      & img{
+        object-fit: cover;
+        width:100%;
+        height:100%;
+      }
+  }
+
+  &__diagrams{
+    background-color: #B6FC95;
+    grid-column:1/5;
+    grid-row: 4/-1;
+    
+  }
+
+  &__excel{
+    background-color: $c-blue-light;
+    grid-column:5/-1;
+    grid-row:4/-1;
+  }
+}
