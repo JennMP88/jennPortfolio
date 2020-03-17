@@ -1,0 +1,13 @@
+.Resume{
+  display:grid;
+  grid-template-columns: repeat(8, minmax(min-content,1fr)); 
+  grid-template-rows:repeat(4,1fr);
+  grid-column: full-start/full-end;
+  background-color: #C3CFD0;
+
+  &__resume{
+    grid-column:1/6;
+    grid-row:2/-1;
+  }
+
+}
